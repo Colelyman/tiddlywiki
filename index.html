@@ -145,17 +145,27 @@ Error message and password prompt
 
 <li>$:/config/Navigation/UpdateAddressBar</li>
 
+<li>$:/config/Navigation/UpdateHistory</li>
+
+<li>$:/config/NewJournal/Tags</li>
+
 <li>$:/config/NewJournal/Title</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
 
+<li>$:/config/peek-stylesheets/open/--994748944Solarized CodeMirror Theme</li>
+
 <li>$:/config/RelinkOnRename</li>
 
 <li>$:/config/shortcuts-mac/save-tiddler</li>
 
 <li>$:/config/shortcuts/cancel-edit-tiddler</li>
+
+<li>$:/config/Tiddlers/TitleLinks</li>
+
+<li>$:/config/Toolbar/ButtonClass</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/export-tiddler</li>
 
@@ -212,6 +222,8 @@ Error message and password prompt
 <li>$:/state/tab--2112689675</li>
 
 <li>$:/state/tab--697582678</li>
+
+<li>$:/state/tab--959111941</li>
 
 <li>$:/state/tab-1749438307</li>
 
@@ -458,6 +470,12 @@ Error message and password prompt
 <div created="20190117141246996" modified="20190117141246996" title="$:/config/Navigation/UpdateAddressBar">
 <pre>permaview</pre>
 </div>
+<div created="20190117142752457" modified="20190117142752457" title="$:/config/Navigation/UpdateHistory">
+<pre>yes</pre>
+</div>
+<div created="20190117142911872" modified="20190117142912240" title="$:/config/NewJournal/Tags">
+<pre>journal</pre>
+</div>
 <div created="20190116144151194" modified="20190116144151194" title="$:/config/NewJournal/Title">
 <pre>DDth MM YYYY</pre>
 </div>
@@ -467,6 +485,9 @@ Error message and password prompt
 <div created="20190116144243036" modified="20190116144243036" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
 <pre>show</pre>
 </div>
+<div created="20190117143006554" modified="20190117143039443" title="$:/config/peek-stylesheets/open/--994748944Solarized CodeMirror Theme">
+<pre>no</pre>
+</div>
 <div created="20190117041307020" modified="20190117041307020" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
@@ -475,6 +496,12 @@ Error message and password prompt
 </div>
 <div created="20190116162133804" modified="20190116162133804" title="$:/config/shortcuts/cancel-edit-tiddler">
 <pre></pre>
+</div>
+<div created="20190117142759774" modified="20190117142759774" title="$:/config/Tiddlers/TitleLinks">
+<pre>yes</pre>
+</div>
+<div created="20190117142807867" modified="20190117142819822" title="$:/config/Toolbar/ButtonClass">
+<pre>tc-btn-rounded</pre>
 </div>
 <div created="20190117141329701" modified="20190117141348621" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/export-tiddler">
 <pre>hide</pre>
@@ -10045,14 +10072,17 @@ Error message and password prompt
 <div created="20190116144207434" modified="20190117141307963" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
-<div created="20190116144158485" modified="20190116144203101" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Basics</pre>
+<div created="20190116144158485" modified="20190117142922961" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
 <div created="20190116144107402" modified="20190117141225598" title="$:/state/tab--697582678">
 <pre>$:/core/ui/ControlPanel/Settings/TiddlyWiki</pre>
 </div>
-<div created="20190116143958043" modified="20190117141304088" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20190117142925985" modified="20190117143001085" title="$:/state/tab--959111941">
+<pre>$:/core/ui/ControlPanel/Stylesheets</pre>
+</div>
+<div created="20190116143958043" modified="20190117142848811" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20190116163119888" modified="20190116163126347" title="$:/state/tab-994704573">
 <pre>$:/core/ui/TiddlerInfo/References</pre>
@@ -10060,7 +10090,7 @@ Error message and password prompt
 <div created="20190116144233022" modified="20190116144638200" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div created="20190117141221395" list="$:/ControlPanel [[Fundamental subspaces]] [[SLURM job arrays]] [[Welcome to my Zettlekasten]] [[Zettlekasten method]] [[Solarized CodeMirror Theme]]" modified="20190117141221395" title="$:/StoryList">
+<div list="[[Welcome to my Zettlekasten]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10076,7 +10106,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;file:///Users/cole/Downloads/tiddlywikilocations/tiddlywiki.html&quot;
+            &quot;text&quot;: &quot;file:///Users/cole/Downloads/tiddlywikilocations/index.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
@@ -10096,7 +10126,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/Users/cole/Downloads/tiddlywikilocations/tiddlywiki.html&quot;
+            &quot;text&quot;: &quot;/Users/cole/Downloads/tiddlywikilocations/index.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -10795,8 +10825,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190116144008418" modified="20190116144439962" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>code</pre>
 </div>
-<div created="20190117040141251" modified="20190117040227847" title="$:/temp/search">
-<pre>space</pre>
+<div created="20190117040141251" modified="20190117143050418" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20190116144545538" modified="20190116144545538" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.19/index.html" url="https://tiddlywiki.com/library/v5.1.19/index.html">
 <pre>loaded</pre>
@@ -11130,8 +11160,8 @@ Reference: https://www.rc.fas.harvard.edu/resources/documentation/submitting-lar
 }
 </pre>
 </div>
-<div created="20190116144131507" modified="20190116164529020" tags="" title="Welcome to my Zettlekasten">
-<pre>This is my collections of thoughts and things that I think are useful enough to write down. 
+<div created="20190116144131507" modified="20190117143202339" tags="" title="Welcome to my Zettlekasten">
+<pre>This is my collection of thoughts and things that I find useful enough to write down. 
 I thought that it would be cool to share this with the world!
 I hope that someone someday may find something useful here.
 
