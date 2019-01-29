@@ -137,6 +137,10 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/.cole/macros/email-link</li>
+
+<li>$:/cole/templates/advisorList</li>
+
 <li>$:/config/codemirror/keyMap</li>
 
 <li>$:/config/codemirror/lineNumbers</li>
@@ -156,6 +160,8 @@ Error message and password prompt
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
 
 <li>$:/config/peek-stylesheets/open/--994748944Solarized CodeMirror Theme</li>
+
+<li>$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/codemirror</li>
 
 <li>$:/config/RelinkOnRename</li>
 
@@ -183,6 +189,8 @@ Error message and password prompt
 
 <li>$:/palette</li>
 
+<li>$:/plugins/skeeve/newtiddler.js</li>
+
 <li>$:/plugins/tiddlywiki/codemirror</li>
 
 <li>$:/plugins/tiddlywiki/codemirror-autocomplete</li>
@@ -205,7 +213,13 @@ Error message and password prompt
 
 <li>$:/state/dropdown/keyboardshortcut/save-tiddler-286565879</li>
 
+<li>$:/state/edit/references--1380344595</li>
+
 <li>$:/state/edit/references-362051921</li>
+
+<li>$:/state/folded/$:/plugins/skeeve/newtiddler.js</li>
+
+<li>$:/state/folded/$:/temp/AdvisorDBeditAdvisor</li>
 
 <li>$:/state/folded/Solarized CodeMirror Theme</li>
 
@@ -216,6 +230,10 @@ Error message and password prompt
 <li>$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/codemirror---1125263437</li>
 
 <li>$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/codemirror-autocomplete</li>
+
+<li>$:/state/plugin-info--906510658-$:/plugins/tiddlywiki/codemirror</li>
+
+<li>$:/state/sidebar</li>
 
 <li>$:/state/tab--1963855381</li>
 
@@ -229,9 +247,13 @@ Error message and password prompt
 
 <li>$:/state/tab-994704573</li>
 
+<li>$:/state/tab/moresidebar-1850697562</li>
+
 <li>$:/state/tab/sidebar--595412856</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/temp/AdvisorDBeditAdvisor</li>
 
 <li>$:/temp/info-plugin</li>
 
@@ -427,21 +449,83 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/options/sidebarlayout</li>
 
+<li>advisorEntry</li>
+
+<li>advisorSkeleton</li>
+
+<li>Bill Gropp</li>
+
+<li>Cornell</li>
+
+<li>David B. Shmoys</li>
+
+<li>editAdvisor</li>
+
+<li>Elizabeth M. Cherry</li>
+
+<li>Eytan Ruppin</li>
+
 <li>Fundamental subspaces</li>
 
+<li>Goerg Seelig</li>
+
+<li>Graeme Bailey</li>
+
+<li>Hiyuan Yu</li>
+
+<li>Image Segmentation</li>
+
+<li>Insights on research</li>
+
+<li>Jian Peng</li>
+
+<li>Larry Ruzzo</li>
+
 <li>Left null subspace</li>
+
+<li>Linwei Wang</li>
+
+<li>Luis Ceze</li>
+
+<li>Meta</li>
 
 <li>Null subspace</li>
 
 <li>Orthogonal complement of range subspace</li>
 
+<li>Parmesh Ramanathan</li>
+
+<li>PhD Advisor DB</li>
+
+<li>Potential Advisor's for PhD</li>
+
+<li>Proof of the Projection Theorem</li>
+
 <li>Range subspace</li>
 
+<li>RIT</li>
+
 <li>Row subspace</li>
+
+<li>Saurabh Sinha</li>
 
 <li>SLURM job arrays</li>
 
 <li>Solarized CodeMirror Theme</li>
+
+<li>Su-In Lee</li>
+
+<li>Thesis Proposal</li>
+
+<li>UIUC</li>
+
+<li>UMD</li>
+
+<li>UW</li>
+
+<li>UWM</li>
+
+<li>viewAdvisor</li>
 
 <li>Welcome to my Zettlekasten</li>
 
@@ -457,6 +541,18 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20190126190807237" modified="20190126192501149" tags="$:/tags/Macro" title="$:/.cole/macros/email-link">
+<pre>\define email-link()
+[[$(email)$|mailto:$(email)$]]
+\end
+
+&lt;$set name=&quot;email&quot; value=&quot;&quot;&quot;cole@colelyman.com&quot;&quot;&quot;&gt;
+&lt;&lt;email-link&gt;&gt;
+&lt;/$set&gt;</pre>
+</div>
+<div created="20190126165642920" modified="20190126183307427" tags="" title="$:/cole/templates/advisorList">
+<pre>&lt;li&gt;{{!!name||advisorEntry}}&lt;/li&gt;</pre>
+</div>
 <div created="20190116144654269" modified="20190116144654269" title="$:/config/codemirror/keyMap" type="string">
 <pre>vim
 </pre>
@@ -487,6 +583,9 @@ Error message and password prompt
 </div>
 <div created="20190117143006554" modified="20190117143039443" title="$:/config/peek-stylesheets/open/--994748944Solarized CodeMirror Theme">
 <pre>no</pre>
+</div>
+<div created="20190126161248097" modified="20190126161248097" title="$:/config/Plugins/Disabled/$:/plugins/tiddlywiki/codemirror">
+<pre>yes</pre>
 </div>
 <div created="20190117041307020" modified="20190117041307020" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
@@ -9392,13 +9491,150 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[$:/plugins/tiddlywiki/katex]]</pre>
+# [[$:/plugins/skeeve/newtiddler.js]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
 <div created="20190116144215912" modified="20190116144215912" title="$:/palette">
 <pre>$:/palettes/SolarFlare</pre>
+</div>
+<div created="20131218201042019" creator="Stephan Hradek" modified="20140113102555463" modifier="Stephan Hradek" module-type="widget" title="$:/plugins/skeeve/newtiddler.js" type="application/javascript">
+<pre>/*\
+title: $:/plugins/skeeve/newtiddler.js
+type: application/javascript
+module-type: widget
+
+newtiddler widget
+
+```
+&lt;$newtiddler title=&quot;name&quot; skeleton=&quot;name&quot;&gt;Buttontext&lt;/$newtiddler&gt;
+```
+
+The skeleton tiddler may contain variables which are replaced during creation
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+var Widget = require(&quot;$:/core/modules/widgets/widget.js&quot;).widget;
+
+var NewtiddlerWidget = function(parseTreeNode,options) {
+	this.initialise(parseTreeNode,options);
+};
+
+/*
+Inherit from the base widget class
+*/
+NewtiddlerWidget.prototype = new Widget();
+
+/*
+Render this widget into the DOM
+*/
+NewtiddlerWidget.prototype.render = function(parent,nextSibling) {
+	var self = this;
+	// Remember parent
+	this.parentDomNode = parent;
+	// Compute attributes and execute state
+	this.computeAttributes();
+	this.execute();
+	// Create element
+	var domNode = this.document.createElement(&quot;button&quot;);
+	// Assign classes
+	domNode.className = this.newtiddlerClass;
+	// Assign styles
+	if(this.style) {
+		domNode.setAttribute(&quot;style&quot;,this.style);
+	}
+	// Add a click event handler
+	$tw.utils.addEventListeners(domNode,[
+		{name: &quot;click&quot;, handlerObject: this, handlerMethod: &quot;handleClickEvent&quot;}
+	]);
+	// Insert element
+	parent.insertBefore(domNode,nextSibling);
+	this.renderChildren(domNode,null);
+	this.domNodes.push(domNode);
+};
+
+NewtiddlerWidget.prototype.handleClickEvent = function(event) {
+	var skeleton = this.wiki.getTiddlerAsJson(this.newtiddlerSkeleton);
+	var skeletonClone = JSON.parse(this.substituteVariableReferences(skeleton));
+	var basetitle = this.newtiddlerTitle;
+	var title = basetitle;
+	for(var t=1; this.wiki.tiddlerExists(title); t++) {
+		title = basetitle + &quot; &quot; + t;
+	}
+	skeletonClone.title = title;
+	for(var modificationField in this.wiki.getModificationFields()) {
+		delete skeletonClone[modificationField];
+	}
+	var created = this.wiki.getCreationFields();
+	for(var creationField in created) {
+		skeletonClone[modificationField] = created[creationField];
+	}
+	this.wiki.addTiddler(skeletonClone);
+	switch(this.newtiddlerEdit) {
+	case &quot;show&quot;:
+	case &quot;yes&quot;:
+		var bounds = this.domNodes[0].getBoundingClientRect();
+		this.dispatchEvent({
+			type: &quot;tw-navigate&quot;,
+			navigateTo: title,
+			navigateFromTitle: this.getVariable(&quot;currentTiddler&quot;),
+			navigateFromNode: this,
+			navigateFromClientRect: { top: bounds.top, left: bounds.left, width: bounds.width, right: bounds.right, bottom: bounds.bottom, height: bounds.height
+			}
+		});
+		if(this.newtiddlerEdit === &quot;yes&quot;) {
+			this.dispatchEvent({type: &quot;tw-edit-tiddler&quot;, tiddlerTitle: title});
+		}
+		break;
+	case &quot;no&quot;:
+		break;
+	case &quot;inline&quot;:
+		// not implemented yet
+		break;
+	}
+};
+
+
+/*
+Compute the internal state of the widget
+*/
+NewtiddlerWidget.prototype.execute = function() {
+	// Get attributes
+	this.newtiddlerTitle = this.getAttribute(&quot;title&quot;);
+	this.newtiddlerSkeleton = this.getAttribute(&quot;skeleton&quot;);
+	this.newtiddlerEdit = this.getAttribute(&quot;edit&quot;, &quot;yes&quot;);
+	this.newtiddlerClass = this.getAttribute(&quot;class&quot;,&quot;&quot;);
+	this.newtiddlerStyle = this.getAttribute(&quot;style&quot;);
+	if(this.newtiddlerClass != &quot;&quot;) {
+		this.newtiddlerClass = &quot; &quot; + this.newtiddlerClass;
+	}
+	this.newtiddlerClass = &quot;tw-newtiddler-button&quot; + this.newtiddlerClass;
+	// Make child widgets
+	this.makeChildWidgets();
+};
+
+/*
+Selectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering
+*/
+NewtiddlerWidget.prototype.refresh = function(changedTiddlers) {
+	var changedAttributes = this.computeAttributes();
+	if(changedAttributes.title || changedAttributes.skeleton || changedAttributes.class || changedAttributes.style) {
+		this.refreshSelf();
+		return true;
+	}
+	return this.refreshChildren(changedTiddlers);
+};
+
+exports.newtiddler = NewtiddlerWidget;
+
+})();
+</pre>
 </div>
 <div author="JeremyRuston" dependents="" description="CodeMirror _Editor" list="readme usage keyboard license" plugin-type="plugin" title="$:/plugins/tiddlywiki/codemirror" type="application/json" version="5.1.19">
 <pre>{
@@ -10051,8 +10287,17 @@ Error message and password prompt
 <div created="20190116162152493" modified="20190116162203051" title="$:/state/dropdown/keyboardshortcut/save-tiddler-286565879">
 <pre>close</pre>
 </div>
+<div created="20190126164102715" modified="20190126164106798" title="$:/state/edit/references--1380344595">
+<pre>hide</pre>
+</div>
 <div created="20190117041314087" modified="20190117041316565" title="$:/state/edit/references-362051921">
 <pre>hide</pre>
+</div>
+<div created="20190126193535433" modified="20190126194833365" title="$:/state/folded/$:/plugins/skeeve/newtiddler.js">
+<pre>show</pre>
+</div>
+<div created="20190126164024311" modified="20190126164025944" title="$:/state/folded/$:/temp/AdvisorDBeditAdvisor">
+<pre>show</pre>
 </div>
 <div created="20190116162001748" modified="20190117040115940" title="$:/state/folded/Solarized CodeMirror Theme">
 <pre>hide</pre>
@@ -10069,6 +10314,12 @@ Error message and password prompt
 <div created="20190116162104035" modified="20190116162116973" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/codemirror-autocomplete">
 <pre>no</pre>
 </div>
+<div created="20190126161942197" modified="20190126161942197" title="$:/state/plugin-info--906510658-$:/plugins/tiddlywiki/codemirror">
+<pre>no</pre>
+</div>
+<div created="20190117201338629" modified="20190126194936785" title="$:/state/sidebar">
+<pre>yes</pre>
+</div>
 <div created="20190116144207434" modified="20190117141307963" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
@@ -10078,19 +10329,25 @@ Error message and password prompt
 <div created="20190116144107402" modified="20190117141225598" title="$:/state/tab--697582678">
 <pre>$:/core/ui/ControlPanel/Settings/TiddlyWiki</pre>
 </div>
-<div created="20190117142925985" modified="20190117143001085" title="$:/state/tab--959111941">
-<pre>$:/core/ui/ControlPanel/Stylesheets</pre>
+<div created="20190117142925985" modified="20190126193234885" title="$:/state/tab--959111941">
+<pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20190116143958043" modified="20190117142848811" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20190116143958043" modified="20190126193252259" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20190116163119888" modified="20190116163126347" title="$:/state/tab-994704573">
 <pre>$:/core/ui/TiddlerInfo/References</pre>
 </div>
-<div created="20190116144233022" modified="20190116144638200" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20190126071542108" modified="20190126193317958" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/System</pre>
 </div>
-<div list="[[Welcome to my Zettlekasten]]" title="$:/StoryList">
+<div created="20190116144233022" modified="20190126194941640" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
+</div>
+<div created="20190126191841153" list="[[Welcome to my Zettlekasten]]" modified="20190126224445519" title="$:/StoryList">
+<pre></pre>
+</div>
+<div created="20190125203042557" modified="20190126210752502" tags="" title="$:/temp/AdvisorDBeditAdvisor">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10822,10 +11079,10 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20190116144005881" dependents="" description="Basic theme" modified="20190116144005881" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.19/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.19/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.19">
 <pre></pre>
 </div>
-<div created="20190116144008418" modified="20190116144439962" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
-<pre>code</pre>
+<div created="20190116144008418" modified="20190124144516219" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
+<pre>navigator</pre>
 </div>
-<div created="20190117040141251" modified="20190117143050418" title="$:/temp/search">
+<div created="20190117040141251" modified="20190126193219711" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20190116144545538" modified="20190116144545538" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.19/index.html" url="https://tiddlywiki.com/library/v5.1.19/index.html">
@@ -10946,6 +11203,83 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190116144227394" modified="20190116144227394" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fluid-fixed</pre>
 </div>
+<div created="20190126072308145" description="Displays a tiddler along with a small edit button." modified="20190126202054419" tags="template" title="advisorEntry">
+<pre>\define editbutton()
+&lt;span title=&quot;edit details&quot;&gt;
+&lt;$button set=&quot;$:/temp/AdvisorDBeditAdvisor&quot; setTo={{!!title}} class=&quot;btn-invisible&quot;&gt;
+{{$:/core/images/edit-button}}
+&lt;/$button&gt;
+&lt;/span&gt;
+\end
+
+\define editfield()
+&lt;$reveal state=&quot;$:/temp/AdvisorDBeditAdvisor&quot; text={{!!title}} type=&quot;match&quot;&gt;
+{{!!title||editAdvisor}}
+&lt;$button set=&quot;$:/temp/AdvisorDBeditAdvisor&quot; setTo=&quot;&quot; class=&quot;btn-invisible&quot;&gt;
+{{$:/core/images/done-button}}
+&lt;/$button&gt;
+&amp;nbsp;
+&lt;$button class=&quot;btn-invisible&quot;&gt;
+&lt;$action-deletetiddler $tiddler={{$:/temp/AdvisorDBeditAdvisor}}/&gt;
+{{$:/core/images/delete-button}}
+&lt;/$button&gt;
+&lt;/$reveal&gt;
+\end
+
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt; @ &lt;$link to={{!!school}}&gt;{{!!school}}&lt;/$link&gt; &lt;&lt;editbutton&gt;&gt; &lt;&lt;editfield&gt;&gt;</pre>
+</div>
+<div created="20190125202130500" email="" field="" modified="20190126194803196" name="" school="" title="advisorSkeleton" website="">
+<pre></pre>
+</div>
+<div created="20190126202504538" email="wgropp@illinois.edu" field="HPC, PDE solvers" modified="20190126202755342" name="Bill Gropp" school="UIUC" tags="advisor" title="Bill Gropp" website="wgropp.cs.illinois.edu/">
+<pre>Helped create MPI.</pre>
+</div>
+<div admission-website="https://www.cs.cornell.edu/phd/admissions" created="20190126210829019" modified="20190126221105794" tags="school" title="Cornell">
+<pre>&lt;ul&gt;
+&lt;$list filter=&quot;[tag[advisor]school[Cornell]]&quot;&gt;
+&lt;li&gt;{{!!name||advisorEntry}}&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
+
+!! Program information
+&lt;a href={{!!admission-website}}&gt;Admission website&lt;/a&gt;
+
+''Deadline'': December 15^^th^^
+
+!!! Financials
+All students are fully funded with tuition, health insurance, and a stipend of $25,152 for nine months. Additional summer support is available for $8,700.</pre>
+</div>
+<div created="20190126195853615" email="shmoys@cs.cornell.edu" field="Math, CS, Combinatorics" modified="20190126195955591" name="David B. Shmoys" school="Cornell" tags="advisor" title="David B. Shmoys" website="www.cs.cornell.edu/home/shmoys/shmoys.html">
+<pre></pre>
+</div>
+<div created="20190125202738831" description="Displays the [[advisor DB]]'s field for editing." modified="20190126195113020" tags="template" title="editAdvisor" type="text/vnd.tiddlywiki">
+<pre>&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;oddRow&quot;&gt;
+&lt;th align=&quot;left&quot;&gt;Website&lt;/th&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;$edit field=&quot;website&quot;/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;evenRow&quot;&gt;
+&lt;th align=&quot;left&quot;&gt;School&lt;/th&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;$edit field=&quot;school&quot;/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;oddRow&quot;&gt;
+&lt;th align=&quot;left&quot;&gt;Email&lt;/th&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;$edit field=&quot;email&quot;/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;evenRow&quot;&gt;
+&lt;th align=&quot;left&quot;&gt;Field&lt;/th&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;$edit field=&quot;field&quot;/&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</pre>
+</div>
+<div created="20190126194217153" email="excsma@rit.edu" field="Math, Systems Biology" modified="20190126195258381" name="Elizabeth M. Cherry" school="RIT" tags="advisor" title="Elizabeth M. Cherry" website="https://www.rit.edu/science/people/elizabeth-cherry/">
+<pre></pre>
+</div>
+<div created="20190126205725663" email=" ruppin@umiacs.umd.edu" field="Genome Wide Systems Biology, Bioinformatics, CS" modified="20190126210555449" name="Eytan Ruppin" school="UMD" tags="advisor" title="Eytan Ruppin" website="www.cs.umd.edu/people/ruppin">
+<pre></pre>
+</div>
 <div created="20190117033752565" modified="20190117041334200" tags="math [[linear algebra]]" title="Fundamental subspaces">
 <pre>The four fundamental subspaces (plus [[Orthogonal complement of row subspace]]) and their orthogonal complements are:
 
@@ -10955,8 +11289,73 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * {{Null subspace}}
 * {{Left null subspace}}</pre>
 </div>
+<div created="20190126201243001" email="gseelig@u.washington.edu" field="Synthetic Biology, CS" modified="20190126201504625" name="Goerg Seelig" school="UW" tags="advisor" title="Goerg Seelig" website="www.seeliglab.org/">
+<pre></pre>
+</div>
+<div created="20190126195657821" email="bailey@cs.cornell.edu" field="CS, Math, Systems Biology" modified="20190126195834090" name="" school="Cornell" tags="advisor" title="Graeme Bailey" website="www.cs.cornell.edu/~bailey/">
+<pre></pre>
+</div>
+<div created="20190125202130500" email="haiyuan.yu@cornell.edu" field="Systems Biology" modified="20190126195627631" name="Hiyuan Yu" school="Cornell" tags="advisor" title="Hiyuan Yu" website="yulab.icmb.cornell.edu/">
+<pre></pre>
+</div>
+<div created="20190128224718417" modified="20190128231240885" tags="cs450" title="Image Segmentation">
+<pre>!! General Methods
+* Morphological Operations
+** Erode/dilate
+** Open/close
+* Connected Components
+
+!! Graph-Cut Segmentation
+* A spectral type of segmentation.
+* The user selects the foreground and the background via strokes.
+* This becomes an //optimal graph cut problem//
+* Has a Bayesian-like cost function
+** Likelihood: labeled pixels are the seeds for the region
+** Prior: similar neighbors should go in similar regions</pre>
+</div>
+<div created="20190126233029431" modified="20190128220514214" tags="" title="Insights on research">
+<pre> !! Learning by thinking
+&lt;&lt;&lt;
+The first rule of research is to think, think and think again. Never hesitate to throw your mind at anything. That should be the first thing you try. Before looking up a book or paper, before asking anyone, think. For example, suppose you are reading a paper and there is a lemma, with the proof referred to another paper. Should you go get the other paper to look it up? No. First, try to prove the lemma yourself. If you don't succeed after a reasonable time, go look it up. But if you solve it yourself, you will have understood it better. What you solve by thinking is your baby from then on; what you look up you will forget and have to look up again and again.
+
+Never be lazy about thinking. That's how you build up understanding and develop a bag of techniques that you can use.
+
+Thinking is fun. If you don't find it so, it's an indication you are in the wrong business. 
+&lt;&lt;&lt;
+
+!!  Understanding versus knowledge
+&lt;&lt;&lt;
+It is more important to understand well what you know than to know a lot. Successful research comes from having a good understanding, especially of the basics.
+
+When you read a paper, ask yourself questions. What if I changed the scheme in the following way: would it be secure or not? How does this compare to the following other scheme? Why is this novel? Can I come up with a different proof? Understanding means the ability to go beyond the immediate. It means knowing not just what is the item in question, but how it fits into a larger context, what are its variants, and what happens if you //perturbe// it one way or another. 
+&lt;&lt;&lt;
+
+[[http://cseweb.ucsd.edu/~mihir/phd.html]]
+</pre>
+</div>
+<div created="20190126200019307" email="jianpeng@illinois.edu" field="Bioinformatics, Systems Biology, CS, Machine Learning" modified="20190126200146418" name="Jian Peng" school="UIUC" tags="advisor" title="Jian Peng" website="jianpeng.web.engr.illinois.edu/">
+<pre></pre>
+</div>
+<div created="20190126201523794" email="ruzzo@cs.washington.edu" field="Bioinformatics, CS" modified="20190126201625525" name="Larry Ruzzo" school="UW" tags="advisor" title="Larry Ruzzo" website="www.cs.washington.edu/people/faculty/ruzzo/research">
+<pre></pre>
+</div>
 <div created="20190117040054711" modified="20190117040321873" tags="[[linear algebra]] math" title="Left null subspace">
 <pre>The left null space of $$A$$, $$\mathcal{N}(A) = \{ q \in \mathbb{C}^n\; |\; q'A = 0 \}$$</pre>
+</div>
+<div created="20190126200335529" email="linwei.wang@rit.edu" field="Machine Learning, Bioinformatics" modified="20190126200443795" name="Linwei Wang" school="RIT" tags="advisor" title="Linwei Wang" website="pht180.rit.edu/cblwang/">
+<pre></pre>
+</div>
+<div created="20190126200601888" email="luiscezecs.washington.edu" field="CS, Bioinformatics, Programming Languages, Synthetic Biology" modified="20190126200716434" name="Luis Ceze" school="UW" tags="advisor" title="Luis Ceze" website="www.cs.washington.edu/people/faculty/luisceze">
+<pre></pre>
+</div>
+<div created="20190124145039314" modified="20190124160445112" tags="" title="Meta">
+<pre>TiddlyWiki Resources
+
+* [[TiddlyWiki ToolMap|https://dynalist.io/d/zUP-nIWu2FFoXH-oM7L7d9DM]]
+* [[Editting TiddlyWiki via Org-mode|https://github.com/whacked/tiddlywiki-org]]
+* [[Collection of TiddlyWiki scripts|https://kookma.github.io/TW-Scripts/]]
+* [[Plugins by Tobias Beer|https://tobibeer.github.io/tb5/#Plugins]]
+* [[TW5 Hacks|https://tid.li/tw5/hacks.html]]</pre>
 </div>
 <div created="20190117040043502" modified="20190117040311588" tags="[[linear algebra]] math" title="Null subspace">
 <pre>The null space of $$A$$, $$\mathcal{N}(A) = \{ x \in \mathbb{C}^n\; |\; Ax = 0 \}$$</pre>
@@ -10964,11 +11363,90 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190117040002006" modified="20190117041321357" tags="math [[linear algebra]]" title="Orthogonal complement of range subspace">
 <pre>The orthogonal complement of $$\mathcal{R}(A)$$, $$\mathcal{R}^\perp(A) = \{ z \in \mathbb{C}^m\; |\; y'z = z'y = 0,\: \forall y \in \mathcal{R}(A) \}$$</pre>
 </div>
+<div created="20190126200215480" email="parmesh.ramanathan@wisc.edu" field="Genomic Networks, Synthetic Biology, Engineering" modified="20190126200317792" name="Parmesh Ramanathan" school="UWM" tags="advisor" title="Parmesh Ramanathan" website="directory.engr.wisc.edu/ece/Faculty/Ramanathan_Parameswaran/">
+<pre></pre>
+</div>
+<div created="20190126070428045" modified="20190126211148956" tags="phd" title="PhD Advisor DB">
+<pre>&lt;$edit-text tiddler=&quot;$:/temp/AdvisorDBeditAdvisor&quot; tag=&quot;input&quot; type=&quot;text&quot;/&gt;
+&lt;$button&gt;
+&lt;$action-sendmessage 
+$message=&quot;tm-new-tiddler&quot; 
+title={{$:/temp/AdvisorDBeditAdvisor}} 
+name={{$:/temp/AdvisorDBeditAdvisor}} 
+tags=&quot;advisor&quot; 
+email=&quot;&quot;
+school=&quot;&quot;
+field=&quot;&quot;
+website=&quot;&quot;/&gt;
+{{$:/core/images/new-button}}
+&lt;/$button&gt;
+
+
+&lt;ul&gt;
+&lt;$list filter=&quot;[tag[advisor]sort[school]]&quot;&gt;
+&lt;li&gt;{{!!name||advisorEntry}}&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;</pre>
+</div>
+<div created="20190125201405396" modified="20190126065033825" tags="phd" title="Potential Advisor's for PhD">
+<pre>* [[Elizabeth M. Cherry|https://www.rit.edu/science/people/elizabeth-cherry/]]
+* [[Graeme Bailey|http://www.cs.cornell.edu/~bailey/]]
+* [[Haiyuan Yu|http://yulab.icmb.cornell.edu/]]
+* [[David B. Shmoys|http://www.cs.cornell.edu/home/shmoys/shmoys.html]]
+* [[Jian Peng|http://jianpeng.web.engr.illinois.edu/]]
+* [[Parmesh Ramanathan|https://directory.engr.wisc.edu/ece/Faculty/Ramanathan_Parameswaran/]]
+* [[Linwei Wang|http://pht180.rit.edu/cblwang/]]</pre>
+</div>
+<div created="20190117201246775" modified="20190118001154745" tags="" title="Proof of the Projection Theorem">
+<pre>Let $$\min_{m \in M} \|y - m\|$$, the Projection Theorem states that the optimal solution $$\hat{m}$$ satisfies $$(y - \hat{m}) \perp M$$.
+
+Assume (by contradiction) that the the optimal solution does not satisfy $$(y - m_0) \perp M$$.
+Let $$(\hat{m} + \delta m_0) \in M$$ be more optimal than $$(y - \hat{m})$$, thus $$\| y - \hat{m} \|^2 &gt; \| y - (\hat{m} + \delta m_0) \|^2$$.
+Where $$&lt;y - \hat{m}, m_0&gt; = \delta \neq 0$$.
+
+It follows that
+$$
+	\|y - (\hat{m} + \delta m_0) \|^2 =\; &lt;(y - \hat{m}) - \delta m_0, (y - \hat{m}) - \delta m_0&gt; \\
+$$
+$$
+    =\; &lt;y - \hat{m}, y - \hat{m}&gt; - &lt;y - \hat{m}, \delta m_0&gt; - \delta m_0, y - \hat{m}&gt; + &lt;\delta m_0, \delta m_0&gt; \\
+$$
+$$
+    = \|y - \hat{m}\|^2 - 2&lt;y - \hat{m}, \delta m_0&gt; + \|\delta m_0\|^2 \\
+$$
+$$
+    = \|y - \hat{m}\|^2 - 2\delta^2 + |\delta|^2\|m_0\|^2 \\
+$$
+$$
+    = \|y - \hat{m}\|^2 - |\delta|^2
+$$
+
+This is a contradiction because </pre>
+</div>
 <div created="20190117035927024" modified="20190117040256862" tags="[[linear algebra]] math" title="Range subspace">
 <pre>The range of $$A$$, $$\mathcal{R}(A) = \{ y \in \mathbb{C}^m\; |\; \exists x \in \mathbb{C}^m\, \text{s.t.}\, y = Ax \}$$</pre>
 </div>
+<div created="20190126211209161" modified="20190126223232714" tags="school" title="RIT">
+<pre>&lt;ul&gt;
+&lt;$list filter=&quot;[tag[advisor]school[RIT]]&quot;&gt;
+&lt;li&gt;{{!!name||advisorEntry}}&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
+
+!! Program information
+[[Program website|http://phd.gccis.rit.edu/]]
+[[Admission website|http://phd.gccis.rit.edu/admissions.html]]
+
+''Deadline'': no hard deadline, but before January 1^^st^^
+
+!!! Financials
+Tuition is $1,897 per credit hour, graduate support is available upon admission.</pre>
+</div>
 <div created="20190117040024730" modified="20190117040246231" tags="[[linear algebra]] math" title="Row subspace">
 <pre>The row space of $$A$$, $$\mathcal{R}(A') = \{ p \in \mathbb{C}^m\; |\; \exists v \in \mathbb{C}^m\, \text{s.t.}\, p = A'v \}$$</pre>
+</div>
+<div created="20190126203237149" email="sinhas@illinois.edu" field="Computational Molecular Biology, Bioinformatics" modified="20190126203401811" name="Saurabh Sinha" school="UIUC" tags="advisor" title="Saurabh Sinha" website="www.sinhalab.net/">
+<pre></pre>
 </div>
 <div created="20190116195259391" modified="20190117045721299" tags="hpc" title="SLURM job arrays" type="text/vnd.tiddlywiki">
 <pre>Submitting a large number of jobs on SLURM can be burdensome for the scheduler, but a solution for this is [[SLURM job arrays|https://slurm.schedmd.com/job_array.html]].
@@ -11159,6 +11637,104 @@ Reference: https://www.rc.fas.harvard.edu/resources/documentation/submitting-lar
   background: rgba(253, 246, 227, 0.06);
 }
 </pre>
+</div>
+<div created="20190126202137960" email="suinlee@cs.washington.edu " field="Bioinformatics, CS, Machine Learning" modified="20190126202247106" name="Su-In Lee" school="UW" tags="advisor" title="Su-In Lee" website="suinlee.cs.washington.edu/">
+<pre></pre>
+</div>
+<div created="20190124170110147" modified="20190124170157277" tags="" title="Thesis Proposal">
+<pre>Potential titles:
+
+* ''Comparative genomics using the Colored de Bruijn Graph''</pre>
+</div>
+<div created="20190126212032201" modified="20190126224434861" tags="school" title="UIUC">
+<pre>&lt;ul&gt;
+&lt;$list filter=&quot;[tag[advisor]school[UIUC]]&quot;&gt;
+&lt;li&gt;{{!!name||advisorEntry}}&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
+
+!! Program information
+[[Program website|https://cs.illinois.edu/]]
+
+[[Admission website|https://cs.illinois.edu/admissions/graduate/applications-process-requirements]]
+
+''Deadline'': December 15^^th^^
+
+!!! Financials
+Application fee is $70. Most students are fully funded.</pre>
+</div>
+<div created="20190126212106663" modified="20190126225300224" tags="school" title="UMD">
+<pre>&lt;ul&gt;
+&lt;$list filter=&quot;[tag[advisor]school[UMD]]&quot;&gt;
+&lt;li&gt;{{!!name||advisorEntry}}&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
+
+!! Program information
+[[Program website|https://www.cs.umd.edu/grad]]
+
+[[Admission website|https://www.cs.umd.edu/grad/catalog]]
+
+!!! Financials
+Tuition is covered for TAs and RAs with health care coverage. Application fee is $75.</pre>
+</div>
+<div created="20190126212127538" modified="20190126222027037" tags="school" title="UW">
+<pre>&lt;ul&gt;
+&lt;$list filter=&quot;[tag[advisor]school[UW]]&quot;&gt;
+&lt;li&gt;{{!!name||advisorEntry}}&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
+
+!! Program information
+[[Department website|https://www.cs.washington.edu/academics/phd]]
+
+[[Admissions website|https://www.cs.washington.edu/academics/phd/admissions]]
+
+''Deadline'': December 15^^th^^
+
+!!! Financials
+All students are fully funded for 3 years, and additional years are dependent on performance.
+
+</pre>
+</div>
+<div created="20190126212201025" modified="20190126215814370" program-website="http://guide.wisc.edu/graduate/computer-sciences/computer-sciences-phd/" tags="school" title="UWM">
+<pre>!! Advisors
+&lt;ul&gt;
+&lt;$list filter=&quot;[tag[advisor]school[UWM]]&quot;&gt;
+&lt;li&gt;{{!!name||advisorEntry}}&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;
+
+!! Program Information
+&lt;a href={{!!program-website}}&gt;Department website&lt;/a&gt;</pre>
+</div>
+<div created="20190126071155559" modified="20190126211422313" tags="$:/tags/ViewTemplate" title="viewAdvisor">
+<pre>&lt;$list filter=&quot;[is[current]tag[advisor]]&quot;&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;oddRow&quot;&gt;
+&lt;th align=&quot;left&quot;&gt;Website&lt;/th&gt;
+&lt;td align=&quot;left&quot;&gt;{{!!website}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;evenRow&quot;&gt;
+&lt;th align=&quot;left&quot;&gt;School&lt;/th&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;$link to={{!!school}}&gt;{{!!school}}&lt;/$link&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;oddRow&quot;&gt;
+&lt;th align=&quot;left&quot;&gt;Email&lt;/th&gt;
+&lt;td align=&quot;left&quot;&gt;
+&lt;$set name=email value={{!!email}}&gt;
+&lt;&lt;email-link&gt;&gt;
+&lt;/$set&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;evenRow&quot;&gt;
+&lt;th align=&quot;left&quot;&gt;Field&lt;/th&gt;
+&lt;td align=&quot;left&quot;&gt;{{!!field}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/$list&gt;</pre>
 </div>
 <div created="20190116144131507" modified="20190117143202339" tags="" title="Welcome to my Zettlekasten">
 <pre>This is my collection of thoughts and things that I find useful enough to write down. 
